@@ -1,64 +1,71 @@
 const info = document.getElementById('info')
-const btn = document.getElementById('btn-buscar')
+const formulario = document.getElementById('formulario')
 const searchTag = document.getElementById('heroname')
 
 
 let dummy = {
     "response": "success",
-    "id": "2",
-    "name": "Abe Sapien",
+    "id": "213",
+    "name": "Deadpool",
     "powerstats": {
-        "intelligence": "88",
-        "strength": "28",
-        "speed": "35",
-        "durability": "65",
-        "power": "100",
-        "combat": "85"
+    "intelligence": "69",
+    "strength": "32",
+    "speed": "50",
+    "durability": "100",
+    "power": "100",
+    "combat": "100"
     },
     "biography": {
-        "full-name": "Abraham Sapien",
-        "alter-egos": "No alter egos found.",
-        "aliases": [
-            "Langdon Everett Caul",
-            "Abraham Sapien",
-            "Langdon Caul"
-        ],
-        "place-of-birth": "-",
-        "first-appearance": "Hellboy: Seed of Destruction (1993)",
-        "publisher": "Dark Horse Comics",
-        "alignment": "good"
+    "full-name": "Wade Wilson",
+    "alter-egos": "Evil Deadpool, Venompool",
+    "aliases": [
+    "Wade Wilson",
+    "Jack",
+    "Chiyonosake (\"the Wolf of the Rice Wine\")",
+    "Rhodes",
+    "Corpus",
+    "Lopez",
+    "Hobgoblin",
+    "Thom Cruz",
+    "Peter Parker"
+    ],
+    "place-of-birth": "Canada",
+    "first-appearance": "New Mutants #98 (February, 1991)",
+    "publisher": "Evil Deadpool",
+    "alignment": "neutral"
     },
     "appearance": {
-        "gender": "Male",
-        "race": "Icthyo Sapien",
-        "height": [
-            "6'3",
-            "191 cm"
-        ],
-        "weight": [
-            "145 lb",
-            "65 kg"
-        ],
-        "eye-color": "Blue",
-        "hair-color": "No Hair"
+    "gender": "Male",
+    "race": "Mutant",
+    "height": [
+    "6'2",
+    "188 cm"
+    ],
+    "weight": [
+    "210 lb",
+    "95 kg"
+    ],
+    "eye-color": "Brown",
+    "hair-color": "No Hair"
     },
     "work": {
-        "occupation": "Paranormal Investigator",
-        "base": "-"
+    "occupation": "Mercenary; former enforcer, government operative, sumo wrestler, soldier, assassin, anti-hero, others",
+    "base": "Cavern-X, Sedona, Arizona, Mobile"
     },
     "connections": {
-        "group-affiliation": "Bureau for Paranormal Research and Defense",
-        "relatives": "Edith Howard (wife, deceased)"
+    "group-affiliation": "Thunderbolts (Strike Team), shares body with Agent Preston; formerly X-Force, Deadpool Corps, Agency X, S.H.I.E.L.D.; Code Red, Six Pack, One World Church, DP Inc., Weapon X, Weapon Plus, Heroes for Hire, Secret Defenders, Frightful Four, Team Deadpool, L",
+    "relatives": "Thomas \"Mickey\" Wilson (father, deceased); Hailey Wilson (mother, deceased); Gretchen Wilson, Orksa (ex-wives); Evil Deadpool (clone); Widdle Wade (clone)"
     },
     "image": {
-        "url": "https://www.superherodb.com/pictures2/portraits/10/100/956.jpg"
+    "url": "https://www.superherodb.com/pictures2/portraits/10/100/835.jpg"
     }
-}
+    }
 
 
 
-btn.addEventListener("click", async () => {
+formulario.addEventListener("submit",async function (event){
 
+    event.preventDefault();
     const search = searchTag.value.trim()
     console.log(search);
 

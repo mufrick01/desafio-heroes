@@ -5,20 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-    
+
     <title>SuperHeroInfo</title>
 </head>
 
 <body>
+    <header>
+        <div class="navbar">
+            <img src="assets/img/sh1.jpg" alt="">
+            <p>BuscadorHeroes</p>
+        </div>
+        <hr>
+    </header>
+
+    <main>
+
     <div>
         <img src="assets/img/sh2.jpg" alt="">
     </div>
     <div style="display: block;">
+        <form id="formulario">
+            <input type="text" id="heroname" required>
 
-        <input type="text" id="heroname">
-        <button id="btn-buscar">Buscar</button>
+            <button type="submit">Buscar por Id</button>
+        </form>
     </div>
 
 
@@ -27,10 +39,14 @@
 
     <div>
         <div class="infobox">
-        <div id="info"></div>
-        <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+            <div id="info"></div>
+            <div>
+                <div id="chartContainer" style="height: 370px; width: 600px;"></div>
+            </div>
         </div>
     </div>
+</main>
+
 </body>
 
 <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
