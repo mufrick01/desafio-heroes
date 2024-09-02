@@ -79,10 +79,10 @@ formulario.addEventListener("submit",async function (event){
         const resp = await fetch(`https://superheroapi.com/api.php/ce90deb60c2c95c293a710496818246a/${search}`)
         const json = await resp.json()
         data = json
-        console.log(data)
+        if(data.response ==="error"){throw new Error(data.response.error)}
 
     } catch (error) {
-        alert('Error en petición, a continuación vista de dummy')
+        alert('Error en petición, a continuación vista de dummy DEADPOOL')
         data = dummy;
     }
 
