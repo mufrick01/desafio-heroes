@@ -76,7 +76,7 @@ formulario.addEventListener("submit",async function (event){
 
     // https://superheroapi.com/api/{access-token}/{character-id}
     try {
-        const resp = await fetch(`https://superheroapi.com/api/ce90deb60c2c95c293a710496818246a/${search}`)
+        const resp = await fetch(`https://superheroapi.com/api.php/ce90deb60c2c95c293a710496818246a/${search}`)
         const json = await resp.json()
         data = json
         console.log(data)
