@@ -1,0 +1,8 @@
+.infobox{
+    display: flex;
+    gap: 10px;
+}
+
+#chartContainer{
+    margin-top: 25px;
+}
